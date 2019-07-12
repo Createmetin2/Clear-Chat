@@ -9,5 +9,5 @@
 #ifdef CLEAR_CHAT
 	PyModule_AddIntConstant(poModule, "ENABLE_CLEAR_CHAT", true);
 #else
-	PyModule_AddIntConstant(poModule, "CLEAR_CHAT", false);
+	PyModule_AddIntConstant(poModule, "ENABLE_CLEAR_CHAT", false);
 #endif
