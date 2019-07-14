@@ -3,9 +3,7 @@
 	
 #Change
 	if app.ENABLE_CLEAR_CHAT:
-		CHAT_WINDOW_WIDTH = 620
-	else:
-		CHAT_WINDOW_WIDTH = 600
+		CHAT_WINDOW_WIDTH += 20
 		
 #Find
 		chatInputSet.SetSize(550, 25)
@@ -15,9 +13,9 @@
 		if app.ENABLE_CLEAR_CHAT:
 			self.btnClearChat = ui.Button()
 			self.btnClearChat.SetParent(self)
-			self.btnClearChat.SetUpVisual("d:/ymir work/ui/public/close_button_01.sub")
-			self.btnClearChat.SetOverVisual("d:/ymir work/ui/public/close_button_02.sub")
-			self.btnClearChat.SetDownVisual("d:/ymir work/ui/public/close_button_03.sub")
+			self.btnClearChat.SetUpVisual("d:/ymir work/ui/game/taskbar/clear1.png")
+			self.btnClearChat.SetOverVisual("d:/ymir work/ui/game/taskbar/clear2.png")
+			self.btnClearChat.SetDownVisual("d:/ymir work/ui/game/taskbar/clear3.png")
 			self.btnClearChat.SetToolTipText("Clear Chat")
 			self.btnClearChat.SetEvent(lambda : chat.ClearChat())
 			self.btnClearChat.Hide()
@@ -35,7 +33,7 @@
 		
 #Add
 		if app.ENABLE_CLEAR_CHAT:
-			self.btnClearChat.SetPosition(self.GetWidth() - 70, 2)
+			self.btnClearChat.SetPosition(self.GetWidth() - 78, -5)
 			self.btnClearChat.Show()
 			
 #Find
