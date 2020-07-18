@@ -1,7 +1,7 @@
 #Find
 	CHAT_WINDOW_WIDTH = 600
 	
-#Change
+#Add
 	if app.ENABLE_CLEAR_CHAT:
 		CHAT_WINDOW_WIDTH += 20
 		
